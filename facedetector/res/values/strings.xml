@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Face Detector</string>
+    <string name="common_msgListeningError">Speech not recognized, sorry :(</string>
+    
+    <string name="actMainMenu_title">Face Detector</string>
+    <string name="actMainMenu_btnFacesFromImages">Faces from images</string>
+    
+    <string name="actFacesFromImages_title">Faces from images</string>
+    <string name="actFacesFromImages_btnAnalyze">Analyze</string>
+    <string name="actFacesFromImages_btnPrev">Prev</string>
+    <string name="actFacesFromImages_btnNext">Next</string>
+    
+</resources>

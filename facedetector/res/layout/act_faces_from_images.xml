@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_basicActivity"
+>
+
+    <LinearLayout
+        android:id="@+id/actFacesFromImages_layScroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+    >
+        <Button
+            android:id="@+id/actFacesFromImages_btnPrevImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="@string/actFacesFromImages_btnPrev"
+        />
+        <Button
+            android:id="@+id/actFacesFromImages_btnNextImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="@string/actFacesFromImages_btnNext"
+        />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/actFacesFromImages_btnAnalyze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/actFacesFromImages_layScroller"
+        android:text="@string/actFacesFromImages_btnAnalyze"
+    />
+    
+    <TextView
+        android:id="@+id/actFacesFromImages_lblLog"
+        style="@style/common_basicTextView"
+        android:layout_above="@id/actFacesFromImages_btnAnalyze"
+        android:textSize="20dp"
+        android:gravity="center"
+    />
+    
+    <it.rainbowbreeze.facedetector.ui.FaceImageView
+        android:id="@+id/actFacesFromImages_imgFaces"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/actFacesFromImages_lblLog"
+        android:scaleType="matrix"
+    />
+    
+</RelativeLayout>
